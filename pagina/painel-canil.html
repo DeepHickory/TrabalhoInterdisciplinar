@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do canil - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <div class="painel">
+      <aside class="lateral">
+        <a class="logo" href="../index.html">
+          <img class="logo-icone" src="../imagens/patinha.svg" alt="">
+          <span>Clube do<br>Caramelo</span>
+        </a>
+        <nav aria-label="Menu do painel">
+          <a href="painel-canil.html" aria-current="page">Resumo</a>
+          <a href="doacoes-canil.html">Doações</a>
+          <a href="animais-canil.html">Animais</a>
+        </nav>
+        <div class="usuario">
+          <p><strong>Mariana Santos</strong><br><small>Canil São Francisco</small></p>
+          <a class="botao contorno bloco" href="../index.html">Sair</a>
+        </div>
+      </aside>
+      <main class="principal">
+        <div class="linha-titulo">
+          <div>
+            <h1>Resumo geral</h1>
+            <p class="sub">Doações recebidas e animais do canil</p>
+          </div>
+          <a class="botao" href="animais-canil.html">Cadastrar animal</a>
+        </div>
+        <div class="grade tres">
+          <div class="numero">
+            <small>Total arrecadado (mês)</small><strong>R$ 4.250,00</strong>
+          </div>
+          <div class="numero"><small>Total de doadores</small><strong>128</strong></div>
+          <div class="numero"><small>Itens recebidos</small><strong>07 itens</strong></div>
+        </div>
+        <div class="grade duas">
+          <section>
+            <h2>Doações recentes</h2>
+            <ul class="lista">
+              <li>
+                <span class="avatar">LA</span>
+                <div>
+                  <h3>Lucas Almeida</h3>
+                  <small>Hoje · PIX</small>
+                </div>
+                <div class="direita"><strong>R$ 50,00</strong><small></small></div>
+              </li>
+              <li>
+                <span class="avatar">EM</span>
+                <div>
+                  <h3>Empresa ABC Ltda</h3>
+                  <small>Ontem · Cartão (PJ)</small>
+                </div>
+                <div class="direita"><strong>R$ 500,00</strong><small></small></div>
+              </li>
+              <li>
+                <span class="avatar">RH</span>
+                <div>
+                  <h3>Ração doada (15 kg)</h3>
+                  <small>Agendado para 16/10</small>
+                </div>
+                <div class="direita"><strong>A coletar</strong><small></small></div>
+              </li>
+            </ul>
+            <a class="botao contorno bloco" href="doacoes-canil.html">Ver histórico completo</a>
+          </section>
+          <section>
+            <div class="linha-titulo">
+              <h2>Animais do canil</h2>
+              <a href="animais-canil.html">Ver todos</a>
+            </div>
+            <ul class="lista">
+              <li>
+                <span class="foto-mini" role="img" aria-label="Foto">FOTO</span>
+                <div>
+                  <h3>Thor</h3>
+                  <small>Médio · 2 anos · Macho</small>
+                </div>
+              </li>
+              <li>
+                <span class="foto-mini" role="img" aria-label="Foto">FOTO</span>
+                <div>
+                  <h3>Mel</h3>
+                  <small>Pequeno · 1 ano · Fêmea</small>
+                </div>
+              </li>
+              <li>
+                <span class="foto-mini" role="img" aria-label="Foto">FOTO</span>
+                <div>
+                  <h3>Bidu</h3>
+                  <small>Filhote · 4 meses · Macho</small>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

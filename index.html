@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="estilo/style.css">
+  </head>
+  <body>
+    <header class="topo">
+      <a class="logo" href="index.html">
+        <img class="logo-icone" src="imagens/patinha.svg" alt=""><span>Clube do Caramelo</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <a href="pagina/buscar.html">Buscar canis</a>
+        <a href="pagina/adocao.html">Adoção</a>
+        <a href="pagina/cadastro-canil.html">Para canis</a>
+        <a href="pagina/entrar.html">Entrar</a>
+        <a class="botao" href="pagina/painel-doador.html">Meu painel</a>
+      </nav>
+    </header>
+    <main>
+      <section class="heroi">
+        <h1>Transforme vidas com uma doação</h1>
+        <p>
+          Encontre canis e ONGs verificados perto de você e ajude<br>
+          com dinheiro, ração, medicamentos e outros itens.
+        </p>
+        <form class="busca" action="pagina/buscar.html">
+          <input type="text" placeholder="Digite sua cidade" aria-label="Cidade">
+          <button class="botao" type="submit">Buscar</button>
+        </form>
+      </section>
+      <section class="conteudo">
+        <div class="linha-titulo">
+          <h2>Canis verificados próximos</h2>
+          <a href="pagina/buscar.html">Explorar por região</a>
+        </div>
+        <div class="grade">
+          <a class="card" href="pagina/canil.html">
+            <div class="foto" role="img" aria-label="Foto do Canil São Francisco"></div>
+            <div class="info">
+              <h3>Canil São Francisco</h3>
+              <small>Serra/ES · 65 animais</small>
+            </div>
+          </a>
+          <a class="card" href="pagina/canil.html">
+            <div class="foto" role="img" aria-label="Foto do Abrigo Viralata"></div>
+            <div class="info">
+              <h3>Abrigo Viralata</h3>
+              <small>Vila Velha/ES · 200 animais</small>
+            </div>
+          </a>
+          <a class="card" href="pagina/canil.html">
+            <div class="foto" role="img" aria-label="Foto do Patinhas de Anjo"></div>
+            <div class="info">
+              <h3>Patinhas de Anjo</h3>
+              <small>Vitória/ES · 15 animais</small>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="conteudo">
+        <h2>Campanhas emergenciais</h2>
+        <div class="grade">
+          <article class="card">
+            <div class="info">
+              <p><span class="selo">Cachoeiro de Itapemirim</span></p>
+              <h3>Enchentes no Sul do ES</h3>
+              <small>Famílias desabrigadas precisam de água, alimentos e roupas.</small>
+            </div>
+          </article>
+          <article class="card">
+            <div class="info">
+              <p><span class="selo">Vila Velha</span></p>
+              <h3>Deslizamento em Vila Velha</h3>
+              <small>Apoio com cobertores e produtos de higiene.</small>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="faixa">
+        <h2>Gerencia um abrigo ou canil?</h2>
+        <p>Receba doações verificadas, e conecte-se<br>com doadores de todo o Brasil.</p>
+        <a class="botao claro" href="pagina/cadastro-canil.html">Cadastrar meu canil</a>
+        <a class="botao borda-clara" href="pagina/como-funciona.html">Saiba mais</a>
+      </section>
+    </main>
+    <footer class="rodape">
+      <h3>Clube do Caramelo</h3>
+      <p>Conectamos doadores a canis<br>verificados e registramos cada doação.</p>
+      <h4>Links úteis</h4>
+      <ul>
+        <li><a href="pagina/buscar.html">Buscar canis</a></li>
+        <li><a href="pagina/como-funciona.html">Como doar</a></li>
+        <li><a href="pagina/como-funciona.html">Transparência</a></li>
+      </ul>
+      <h4>Contato</h4>
+      <p>[e-mail de contato]<br>[WhatsApp]</p>
+    </footer>
+  </body>
+</html>

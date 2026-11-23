@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <header class="topo">
+      <a class="logo" href="../index.html"><img class="logo-icone" src="../imagens/patinha.svg" alt=""><span>Clube do Caramelo</span></a>
+      <a href="../index.html">← Voltar ao início</a>
+    </header>
+    <main>
+      <section class="centro texto-centro">
+        <h1>Entrar</h1>
+        <p class="sub">Acesse sua conta para acompanhar suas doações.</p>
+        <nav class="abas" aria-label="Tipo de conta">
+          <a href="entrar.html" aria-current="page">Sou doador</a>
+          <a href="entrar-canil.html">Sou canil / abrigo</a>
+        </nav>
+        <form class="caixa">
+          <label>
+            E-mail ou usuário
+            <input type="text" name="usuario" required placeholder="seu@email.com">
+          </label>
+          <label>
+            Senha
+            <input type="password" name="senha" required placeholder="Sua senha">
+          </label>
+          <div class="linha-form">
+            <label class="check"><input type="checkbox"> Manter conectado</label>
+            <a href="esqueci-senha.html">Esqueci minha senha</a>
+          </div>
+          <p class="erro" role="alert" hidden>Usuário ou senha incorretos.</p>
+          <button class="botao bloco" type="submit">Entrar</button>
+        </form>
+        <p class="sub">Ainda não tem conta? <a href="criar-conta.html">Criar conta de doador</a></p>
+        <p class="sub">Gerencia um abrigo? <a href="cadastro-canil.html">Cadastre seu canil</a></p>
+        <aside class="janela" aria-label="Usuários para teste">
+          <h2>Usuários para teste</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Perfil</th>
+                <th scope="col">Usuário</th>
+                <th scope="col">Senha</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Doador</td>
+                <td>doador</td>
+                <td>doa#2026</td>
+              </tr>
+              <tr>
+                <td>Entidade</td>
+                <td>entidade</td>
+                <td>ent!2026</td>
+              </tr>
+              <tr>
+                <td>Administrador</td>
+                <td>admin</td>
+                <td>adm@2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </aside>
+      </section>
+    </main>
+    <script src="../javaScript/login.js"></script>
+  </body>
+</html>

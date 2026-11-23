@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de canil - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <header class="topo">
+      <a class="logo" href="../index.html">
+        <img class="logo-icone" src="../imagens/patinha.svg" alt=""><span>Clube do Caramelo</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <a href="buscar.html">Buscar canis</a>
+        <a href="adocao.html">Adoção</a>
+        <a href="cadastro-canil.html" aria-current="page">Para canis</a>
+        <a href="entrar.html">Entrar</a>
+        <a class="botao" href="painel-doador.html">Meu painel</a>
+      </nav>
+    </header>
+    <main>
+      <section class="conteudo texto-centro">
+        <h1>Cadastre seu canil ou abrigo</h1>
+        <p class="sub">Junte-se à nossa rede de proteção e receba apoio da comunidade.</p>
+        <div class="duas-colunas largo alinhado-topo texto-esquerda">
+          <form class="caixa" action="../index.html">
+            <h2>Informações básicas</h2>
+            <label>
+              Nome do canil / abrigo
+              <input type="text" required placeholder="Ex.: SOS Patinhas Felizes">
+            </label>
+            <div class="linha">
+              <label>
+                CNPJ (para validação)
+                <input type="text" required placeholder="00.000.000/0000-00">
+              </label>
+              <label>
+                Área de atuação
+                <select>
+                  <option>Abrigo</option>
+                  <option>Adoção</option>
+                  <option>Resgate</option>
+                  <option>Castração</option>
+                </select>
+              </label>
+            </div>
+            <h2>Endereço e contato</h2>
+            <div class="linha">
+              <label>
+                Rua
+                <input type="text" required>
+              </label>
+              <label>
+                Número
+                <input type="text" required>
+              </label>
+            </div>
+            <div class="linha">
+              <label>
+                Bairro
+                <input type="text" required>
+              </label>
+              <label>
+                CEP
+                <input type="text" required placeholder="00000-000">
+              </label>
+            </div>
+            <div class="linha">
+              <label>
+                Município
+                <input type="text" required placeholder="Serra">
+              </label>
+              <label>
+                Estado (UF)
+                <input type="text" required placeholder="ES">
+              </label>
+            </div>
+            <div class="linha">
+              <label>
+                Telefone
+                <input type="tel" required placeholder="(27) 9...">
+              </label>
+              <label>
+                E-mail
+                <input type="email" required placeholder="contato@canil.com">
+              </label>
+            </div>
+            <button class="botao bloco" type="submit">Solicitar cadastro e validação</button>
+          </form>
+          <aside class="caixa-verde">
+            <h2>Como funciona a validação?</h2>
+            <ol class="passos">
+              <li>Análise de documentos e CNPJ</li>
+              <li>Visita técnica ou verificação por videochamada</li>
+              <li>Recebimento do selo de confiança</li>
+            </ol>
+            <p class="destaque">Segurança para o doador</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

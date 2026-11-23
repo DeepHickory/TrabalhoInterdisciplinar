@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <header class="topo">
+      <a class="logo" href="../index.html"><img class="logo-icone" src="../imagens/patinha.svg" alt=""><span>Clube do Caramelo</span></a>
+      <a href="canil.html">← Voltar ao canil</a>
+    </header>
+    <main>
+      <section class="centro">
+        <h1 class="texto-centro">Finalizar sua ajuda</h1>
+        <p class="sub texto-centro">Canil São Francisco · Serra/ES</p>
+        <form action="confirmacao.html">
+          <fieldset class="caixa">
+            <legend>O que você quer doar?</legend>
+            <label>
+              Tipo de doação
+              <select>
+                <option>Dinheiro</option>
+                <option>Ração</option>
+                <option>Medicamentos</option>
+                <option>Cobertores</option>
+                <option>Brinquedos</option>
+                <option>Equipamentos</option>
+                <option>Material de limpeza</option>
+                <option>Higiene</option>
+              </select>
+            </label>
+            <label>
+              Valor (R$)
+              <input type="text" inputmode="decimal" value="50,00" required>
+            </label>
+          </fieldset>
+          <fieldset class="caixa">
+            <legend>Seus dados</legend>
+            <label class="check"><input type="checkbox"> Quero doar de forma anônima</label>
+            <label>
+              Nome completo / Razão social
+              <input type="text" required placeholder="Ex.: Lucas Almeida ou Empresa LTDA">
+            </label>
+            <div class="linha">
+              <label>
+                Tipo de pessoa
+                <select>
+                  <option>Pessoa física (CPF)</option>
+                  <option>Pessoa jurídica (CNPJ)</option>
+                </select>
+              </label>
+              <label>
+                E-mail para recibo
+                <input type="email" required placeholder="seu@email.com">
+              </label>
+            </div>
+          </fieldset>
+          <button class="botao bloco" type="submit">Finalizar doação</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de doações - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <div class="painel">
+      <aside class="lateral">
+        <a class="logo" href="../index.html">
+          <img class="logo-icone" src="../imagens/patinha.svg" alt="">
+          <span>Clube do<br>Caramelo</span>
+        </a>
+        <nav aria-label="Menu do painel">
+          <a href="painel-admin.html">Resumo</a>
+          <a href="validar-canis.html">Validar canis</a>
+          <a href="registro-doacoes.html" aria-current="page">Doações</a>
+        </nav>
+        <div class="usuario">
+          <p><strong>Rafael Menezes</strong><br><small>Administrador</small></p>
+          <a class="botao contorno bloco" href="../index.html">Sair</a>
+        </div>
+      </aside>
+      <main class="principal">
+        <h1>Registro de doações</h1>
+        <p class="sub">Todas as doações registradas pelo sistema</p>
+        <form class="caixa filtros-linha" action="registro-doacoes.html">
+          <label>
+            Status
+            <select>
+              <option>Todos</option>
+              <option>Aprovado</option>
+              <option>Pendente</option>
+              <option>Cancelado</option>
+            </select>
+          </label>
+          <label>
+            Data
+            <input type="date">
+          </label>
+          <label>
+            Lote
+            <input type="text" placeholder="Ex.: 0231">
+          </label>
+        </form>
+        <ul class="lista">
+          <li>
+            <span class="avatar">LA</span>
+            <div>
+              <h3>Lucas Almeida → Canil São Francisco</h3>
+              <small>14/10/2026 · Dinheiro · Lote 0231</small>
+            </div>
+            <div class="direita"><strong>R$ 50,00 · Aprovado</strong><small></small></div>
+          </li>
+          <li>
+            <span class="avatar">EM</span>
+            <div>
+              <h3>Empresa ABC Ltda → Abrigo Viralata</h3>
+              <small>13/10/2026 · Dinheiro · Lote 0231</small>
+            </div>
+            <div class="direita"><strong>R$ 500,00 · Aprovado</strong><small></small></div>
+          </li>
+          <li>
+            <span class="avatar">RC</span>
+            <div>
+              <h3>Renato Costa → Patinhas de Anjo</h3>
+              <small>13/10/2026 · Ração · Lote 0230</small>
+            </div>
+            <div class="direita"><strong>35 un. · Pendente</strong><small></small></div>
+          </li>
+          <li>
+            <span class="avatar">MS</span>
+            <div>
+              <h3>Anônimo → SOS Animais</h3>
+              <small>12/10/2026 · Medicamento · Lote 0230</small>
+            </div>
+            <div class="direita"><strong>90 un. · Aprovado</strong><small></small></div>
+          </li>
+          <li>
+            <span class="avatar">AP</span>
+            <div>
+              <h3>Aline Pinto → Casa dos Bichos</h3>
+              <small>12/10/2026 · Cobertores · Lote 0229</small>
+            </div>
+            <div class="direita"><strong>20 un. · Cancelado</strong><small></small></div>
+          </li>
+        </ul>
+      </main>
+    </div>
+  </body>
+</html>

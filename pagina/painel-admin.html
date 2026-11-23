@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do administrador - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <div class="painel">
+      <aside class="lateral">
+        <a class="logo" href="../index.html">
+          <img class="logo-icone" src="../imagens/patinha.svg" alt="">
+          <span>Clube do<br>Caramelo</span>
+        </a>
+        <nav aria-label="Menu do painel">
+          <a href="painel-admin.html" aria-current="page">Resumo</a>
+          <a href="validar-canis.html">Validar canis</a>
+          <a href="registro-doacoes.html">Doações</a>
+        </nav>
+        <div class="usuario">
+          <p><strong>Rafael Menezes</strong><br><small>Administrador</small></p>
+          <a class="botao contorno bloco" href="../index.html">Sair</a>
+        </div>
+      </aside>
+      <main class="principal">
+        <div class="linha-titulo">
+          <div>
+            <h1>Painel do administrador</h1>
+            <p class="sub">Visão geral da plataforma</p>
+          </div>
+          <a class="botao" href="validar-canis.html">Validar canis</a>
+        </div>
+        <div class="grade tres">
+          <div class="numero"><small>Canis cadastrados</small><strong>42</strong></div>
+          <div class="numero"><small>Aguardando validação</small><strong>05</strong></div>
+          <div class="numero"><small>Doações registradas</small><strong>1.280</strong></div>
+        </div>
+        <div class="grade duas">
+          <section>
+            <div class="linha-titulo">
+              <h2>Cadastros pendentes</h2>
+              <a href="validar-canis.html">Ver todos</a>
+            </div>
+            <ul class="lista">
+              <li>
+                <span class="avatar">SO</span>
+                <div>
+                  <h3>SOS Patinhas Felizes</h3>
+                  <small>Serra/ES · Resgate</small>
+                </div>
+                <div class="direita">
+                  <strong><span class="selo pendente">Pendente</span></strong><small></small>
+                </div>
+              </li>
+              <li>
+                <span class="avatar">AV</span>
+                <div>
+                  <h3>Abrigo Vida Nova</h3>
+                  <small>Vitória/ES · Abrigo</small>
+                </div>
+                <div class="direita">
+                  <strong><span class="selo pendente">Pendente</span></strong><small></small>
+                </div>
+              </li>
+              <li>
+                <span class="avatar">CA</span>
+                <div>
+                  <h3>Casa dos Amigos</h3>
+                  <small>Vila Velha/ES · Adoção</small>
+                </div>
+                <div class="direita">
+                  <strong><span class="selo pendente">Pendente</span></strong><small></small>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <div class="linha-titulo">
+              <h2>Doações recentes</h2>
+              <a href="registro-doacoes.html">Ver todas</a>
+            </div>
+            <ul class="lista">
+              <li>
+                <span class="avatar">LA</span>
+                <div>
+                  <h3>Lucas Almeida → Canil São Francisco</h3>
+                  <small>Hoje · Dinheiro</small>
+                </div>
+                <div class="direita"><strong>R$ 50,00</strong><small></small></div>
+              </li>
+              <li>
+                <span class="avatar">EM</span>
+                <div>
+                  <h3>Empresa ABC Ltda → Abrigo Viralata</h3>
+                  <small>Ontem · Dinheiro</small>
+                </div>
+                <div class="direita"><strong>R$ 500,00</strong><small></small></div>
+              </li>
+              <li>
+                <span class="avatar">RH</span>
+                <div>
+                  <h3>Renato Costa → Patinhas de Anjo</h3>
+                  <small>Ontem · Ração</small>
+                </div>
+                <div class="direita"><strong>35 un.</strong><small></small></div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

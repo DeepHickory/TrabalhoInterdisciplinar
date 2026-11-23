@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <header class="topo">
+      <a class="logo" href="../index.html"><img class="logo-icone" src="../imagens/patinha.svg" alt=""><span>Clube do Caramelo</span></a>
+      <a href="../index.html">← Voltar ao início</a>
+    </header>
+    <main>
+      <section class="centro texto-centro">
+        <h1>Criar conta</h1>
+        <p class="sub">Cadastre-se para doar e acompanhar suas doações.</p>
+        <form class="caixa" action="entrar.html">
+          <label>
+            Nome completo
+            <input type="text" required placeholder="Ex.: Lucas Almeida">
+          </label>
+          <label>
+            E-mail
+            <input type="email" required placeholder="seu@email.com">
+          </label>
+          <label>
+            Tipo de pessoa
+            <select>
+              <option>Pessoa física (CPF)</option>
+              <option>Pessoa jurídica (CNPJ)</option>
+            </select>
+          </label>
+          <label>
+            Senha
+            <input type="password" minlength="8" required placeholder="Mínimo 8 caracteres">
+          </label>
+          <label>
+            Confirmar senha
+            <input type="password" minlength="8" required placeholder="Repita a senha">
+          </label>
+          <label class="check">
+            <input type="checkbox" required>
+            Li e concordo com os termos de<br>
+            uso e a política de privacidade.
+          </label>
+          <button class="botao bloco" type="submit">Criar conta</button>
+        </form>
+        <p class="sub">Já tem conta? <a href="entrar.html">Entrar</a></p>
+      </section>
+    </main>
+  </body>
+</html>

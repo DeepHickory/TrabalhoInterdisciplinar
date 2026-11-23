@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais do canil - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <div class="painel">
+      <aside class="lateral">
+        <a class="logo" href="../index.html">
+          <img class="logo-icone" src="../imagens/patinha.svg" alt="">
+          <span>Clube do<br>Caramelo</span>
+        </a>
+        <nav aria-label="Menu do painel">
+          <a href="painel-canil.html">Resumo</a>
+          <a href="doacoes-canil.html">Doações</a>
+          <a href="animais-canil.html" aria-current="page">Animais</a>
+        </nav>
+        <div class="usuario">
+          <p><strong>Mariana Santos</strong><br><small>Canil São Francisco</small></p>
+          <a class="botao contorno bloco" href="../index.html">Sair</a>
+        </div>
+      </aside>
+      <main class="principal">
+        <h1>Animais do canil</h1>
+        <p class="sub">Cadastre e acompanhe os animais disponíveis para adoção</p>
+        <div class="duas-colunas largo">
+          <section>
+            <h2>Animais cadastrados</h2>
+            <ul class="lista"></ul>
+          </section>
+          <form class="caixa">
+            <h2>Cadastrar animal</h2>
+            <label>
+              Nome
+              <input type="text" name="nome" required placeholder="Ex.: Thor">
+            </label>
+            <label>
+              Porte
+              <select name="porte">
+                <option>Pequeno</option>
+                <option>Médio</option>
+                <option>Grande</option>
+              </select>
+            </label>
+            <label>
+              Idade
+              <input type="text" name="idade" required placeholder="Ex.: 2 anos">
+            </label>
+            <label>
+              Sexo
+              <select name="sexo">
+                <option>Macho</option>
+                <option>Fêmea</option>
+              </select>
+            </label>
+            <button class="botao bloco" type="submit">Salvar animal</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="../javaScript/animais.js"></script>
+  </body>
+</html>
