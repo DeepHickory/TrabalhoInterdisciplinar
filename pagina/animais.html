@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais - Clube do Caramelo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagens/patinha.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../estilo/style.css">
+  </head>
+  <body>
+    <header class="topo">
+      <a class="logo" href="../index.html">
+        <img class="logo-icone" src="../imagens/patinha.svg" alt="Logo do Clube do Caramelo"><span>Clube do Caramelo</span>
+      </a>
+      <nav aria-label="Menu principal">
+        <a href="buscar.html">Buscar canis</a>
+        <a href="animais.html" aria-current="page">Animais</a>
+        <a href="cadastro-canil.html">Para canis</a>
+        <a href="entrar.html">Entrar</a>
+        <a class="botao" href="painel-doador.html">Meu painel</a>
+      </nav>
+    </header>
+    <main>
+      <section class="conteudo duas-colunas">
+        <form class="filtros">
+          <h2>Filtros</h2>
+          <fieldset>
+            <legend>Porte</legend>
+            <label class="check"><input type="checkbox"> Pequeno</label>
+            <label class="check"><input type="checkbox"> Médio</label>
+            <label class="check"><input type="checkbox"> Grande</label>
+          </fieldset>
+          <fieldset>
+            <legend>Idade</legend>
+            <label class="check"><input type="checkbox"> Filhote</label>
+            <label class="check"><input type="checkbox"> Adulto</label>
+            <label class="check"><input type="checkbox"> Idoso</label>
+          </fieldset>
+          <fieldset>
+            <legend>Sexo</legend>
+            <label class="check"><input type="checkbox"> Macho</label>
+            <label class="check"><input type="checkbox"> Fêmea</label>
+          </fieldset>
+          <fieldset>
+            <legend>Cidade / Região</legend>
+            <label class="check"><input type="checkbox" checked> Serra</label>
+            <label class="check"><input type="checkbox"> Vitória</label>
+            <label class="check"><input type="checkbox"> Vila Velha</label>
+          </fieldset>
+          <button class="botao bloco" type="submit">Aplicar filtros</button>
+          <a class="limpar" href="animais.html">Limpar tudo</a>
+        </form>
+        <div>
+          <div class="linha-titulo">
+            <h2>Animais atendidos pelos canis</h2>
+            <small>6 de 48 animais</small>
+          </div>
+          <div class="grade">
+            <a class="card" href="animal.html">
+              <div class="foto" role="img" aria-label="Foto de Thor"><img src="../imagens/fotos/thor.jpg" alt="Thor"></div>
+              <div class="info">
+                <h3>Thor</h3>
+                <small>Porte médio · 2 anos · Macho</small>
+                <small>Canil São Francisco · Serra/ES</small>
+              </div>
+            </a>
+            <a class="card" href="animal.html">
+              <div class="foto" role="img" aria-label="Foto de Mel"><img src="../imagens/fotos/mel.jpg" alt="Mel"></div>
+              <div class="info">
+                <h3>Mel</h3>
+                <small>Porte pequeno · 1 ano · Fêmea</small>
+                <small>Canil São Francisco · Serra/ES</small>
+              </div>
+            </a>
+            <a class="card" href="animal.html">
+              <div class="foto" role="img" aria-label="Foto de Caramelo"><img src="../imagens/fotos/caramelo-comendo.jpg" alt="Caramelo"></div>
+              <div class="info">
+                <h3>Caramelo</h3>
+                <small>Porte médio · 3 anos · Macho</small>
+                <small>Abrigo Viralata · Vila Velha/ES</small>
+              </div>
+            </a>
+            <a class="card" href="animal.html">
+              <div class="foto" role="img" aria-label="Foto de Luna"><img src="../imagens/fotos/luna.jpg" alt="Luna"></div>
+              <div class="info">
+                <h3>Luna</h3>
+                <small>Gata · 4 anos · Fêmea</small>
+                <small>Patinhas de Anjo · Vitória/ES</small>
+              </div>
+            </a>
+            <a class="card" href="animal.html">
+              <div class="foto" role="img" aria-label="Foto de Bidu"><img src="../imagens/fotos/bidu.jpg" alt="Bidu"></div>
+              <div class="info">
+                <h3>Bidu</h3>
+                <small>Idoso · 12 anos · Macho</small>
+                <small>Canil São Francisco · Serra/ES</small>
+              </div>
+            </a>
+            <a class="card" href="animal.html">
+              <div class="foto" role="img" aria-label="Foto de Nina"><img src="../imagens/fotos/nina.jpg" alt="Nina"></div>
+              <div class="info">
+                <h3>Nina</h3>
+                <small>Porte pequeno · 2 anos · Fêmea</small>
+                <small>Abrigo Viralata · Vila Velha/ES</small>
+              </div>
+            </a>
+          </div>
+          <nav class="paginacao" aria-label="Páginas">
+            <a href="#" aria-current="page">1</a><a href="#">2</a><a href="#">3</a><a href="#">→</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <footer class="rodape">
+      <h3>Clube do Caramelo</h3>
+      <p>Conectamos doadores a canis<br>verificados e registramos cada doação.</p>
+      <h4>Links úteis</h4>
+      <ul>
+        <li><a href="buscar.html">Buscar canis</a></li>
+        <li><a href="como-funciona.html">Como doar</a></li>
+        <li><a href="como-funciona.html">Transparência</a></li>
+      </ul>
+      <h4>Contato</h4>
+      <p>[e-mail de contato]<br>[WhatsApp]</p>
+    </footer>
+  </body>
+</html>

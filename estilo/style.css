@@ -938,3 +938,62 @@ select:focus {
     font-size: 1.7rem;
   }
 }
+
+.foto,
+.foto-mini,
+.banner,
+.foto-redonda {
+  overflow: hidden;
+}
+
+.foto img,
+.foto-mini img,
+.banner img,
+.foto-redonda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner {
+  height: 200px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.banner.largo {
+  height: 260px;
+  margin-top: 24px;
+}
+
+.foto-redonda {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+}
+
+.heroi.com-foto {
+  background-size: cover;
+  background-position: center;
+  padding: 96px 24px;
+}
+
+.heroi.com-foto h1,
+.heroi.com-foto p {
+  color: var(--branco);
+}
+
+.foto-abraco {
+  background-image: linear-gradient(rgba(33, 77, 56, 0.7), rgba(33, 77, 56, 0.7)), url("../imagens/fotos/abraco.jpg");
+}
+
+.foto-voluntarios {
+  background-image: linear-gradient(rgba(33, 77, 56, 0.7), rgba(33, 77, 56, 0.7)), url("../imagens/fotos/voluntarios-doacoes.jpg");
+}
+
+.aviso {
+  font-size: 0.85rem;
+  color: var(--cinza);
+}
