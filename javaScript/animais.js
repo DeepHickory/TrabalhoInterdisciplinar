@@ -1,7 +1,7 @@
 let animais = JSON.parse(localStorage.getItem("animais")) || [
-  { nome: "Thor", porte: "Médio", idade: "2 anos", sexo: "Macho" },
-  { nome: "Mel", porte: "Pequeno", idade: "1 ano", sexo: "Fêmea" },
-  { nome: "Bidu", porte: "Pequeno", idade: "4 meses", sexo: "Macho" }
+  { nome: "Thor", porte: "Médio", idade: "2 anos", sexo: "Macho", foto: "thor" },
+  { nome: "Mel", porte: "Pequeno", idade: "1 ano", sexo: "Fêmea", foto: "mel" },
+  { nome: "Bidu", porte: "Médio", idade: "12 anos", sexo: "Macho", foto: "bidu" }
 ];
 
 const formulario = document.querySelector("form");
@@ -14,7 +14,7 @@ function mostrar() {
   animais.forEach(function (animal, i) {
     lista.innerHTML += `
       <li>
-        <span class="foto-mini" role="img" aria-label="Foto">FOTO</span>
+        <span class="foto-mini"><img src="${animal.foto ? "../imagens/fotos/" + animal.foto + ".jpg" : "../imagens/patinha.svg"}" alt="Foto de ${animal.nome}"></span>
         <div>
           <h3>${animal.nome}</h3>
           <small>${animal.porte} · ${animal.idade} · ${animal.sexo}</small>
@@ -40,6 +40,7 @@ formulario.addEventListener("submit", function (evento) {
 if (editando === -1) {
   animais.push(animal);
 } else {
+  animal.foto = animais[editando].foto;
   animais[editando] = animal;
   editando = -1;
 }

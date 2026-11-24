@@ -11,11 +11,12 @@
   </head>
   <body>
     <header class="topo">
-      <a class="logo" href="../index.html"><img class="logo-icone" src="../imagens/patinha.svg" alt=""><span>Clube do Caramelo</span></a>
+      <a class="logo" href="../index.html"><img class="logo-icone" src="../imagens/patinha.svg" alt="Logo do Clube do Caramelo"><span>Clube do Caramelo</span></a>
       <a href="canil.html">← Voltar ao canil</a>
     </header>
     <main>
       <section class="centro">
+        <div class="banner"><img src="../imagens/fotos/entrega-racao.jpg" alt="Doador entregando ração em um abrigo"></div>
         <h1 class="texto-centro">Finalizar sua ajuda</h1>
         <p class="sub texto-centro">Canil São Francisco · Serra/ES</p>
         <form action="confirmacao.html">
@@ -24,7 +25,6 @@
             <label>
               Tipo de doação
               <select>
-                <option>Dinheiro</option>
                 <option>Ração</option>
                 <option>Medicamentos</option>
                 <option>Cobertores</option>
@@ -35,9 +35,10 @@
               </select>
             </label>
             <label>
-              Valor (R$)
-              <input type="text" inputmode="decimal" value="50,00" required>
+              Quantidade
+              <input type="text" inputmode="numeric" value="2 sacos" required>
             </label>
+            <p class="aviso">O Clube do Caramelo aceita apenas doações de itens. Não recebemos dinheiro.</p>
           </fieldset>
           <fieldset class="caixa">
             <legend>Seus dados</legend>
